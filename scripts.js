@@ -68,24 +68,37 @@ for (z = 0; z < quote.length; z++) {
     magicQuote = `${magicQuote} ${quote[z]}`
     console.log(magicQuote);
 };
-console.log(magicQuote);
+console.log(magicQuote.trim());
+
+// OR
+
+let magicQuote2 = ``;
+for (word of quote) {
+    magicQuote2 += ` ${word}`
+    console.log(magicQuote2);
+};
+console.log(magicQuote2.trim());
 
 console.log(`========B=======`);
 
 
 for (y = 1; y <= 25; y++) {
-    
     if (y % 3 == 0 && y % 5 == 0) {
         console.log(`Expecto Patronum`);
+    } else if (y % 3 == 0) {
+        console.log(`Expecto`);
+    } else if (y % 5 == 0) {
+        console.log(`Patronum`);
     } else {
-        if ((y % 3) == 0) {
-            console.log(`Expecto`);
-        } else {
-            if ((y % 5) == 0) {
-                console.log(`Patronum`);
-            } else {
-                console.log(y);
-            };
-        };
+        console.log(y);
     };
+};
+
+while (true) {
+    console.log(`same`); 
+    break;
+};
+
+if (true) {
+    console.log(`same`);
 };
