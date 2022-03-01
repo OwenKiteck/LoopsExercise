@@ -2,9 +2,13 @@
 for (i = 1; i <= 7; i++) {
     console.log(i);
 }
+console.log(`================`);
+
 for (x = 5; x <= 25; x += 4) {
     console.log(x);
 }
+console.log(`================`);
+
 
 const wizards = [
     `Harry Potter`,
@@ -14,14 +18,28 @@ const wizards = [
 for (item of wizards) {
     console.log(item);
 }
+console.log(`================`);
 
 let harryPotterMovies = 0;
 while (harryPotterMovies < 8) {
     harryPotterMovies++;
 };
+// OR
+/*
+while (true) {
+    if (harryPotterMovies < 8) {
+        harryPotterMovies++;
+    } else {
+        break;
+    };
+};
+*/
 console.log(harryPotterMovies);
 
+
+
 // BONUS
+console.log(`========B=======`);
 
 const hogwartsHouses = [
     `Gryffindor`,
@@ -34,6 +52,8 @@ for (item of hogwartsHouses) {
         console.log(letter);
     }
 };
+console.log(`========B=======`);
+
 
 // NOT SURE ABOUT THIS ONE (6)
 const quote = [
@@ -42,6 +62,15 @@ const quote = [
     `Wizard`,
     `Harry`
 ];
+
+let magicQuote = ``;
+for (z = 0; z < quote.length; z++) {
+    magicQuote = `${magicQuote} ${quote[z]}`
+    console.log(magicQuote);
+};
+console.log(magicQuote);
+
+console.log(`========B=======`);
 
 
 for (y = 1; y <= 25; y++) {
